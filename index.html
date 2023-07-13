@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/04f3dd5f91.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="app/css/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Loly.id</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Loly.ID</a></div>
+        <ul class="menu">
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="service">Service</a></li>
+          <li><a href="project">Project</a></li>
+        </ul>
+        <a href="" class="action-btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown-menu">
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="service">Service</a></li>
+        <li><a href="project">Project</a></li>
+        <li><a href="" class="action-btn">Get Started</a></li>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="me">
+          <h1>Web Devoloepr <i class="fa-solid fa-code"></i></h1>
+        <p>Saya adalah Junioar Web Devoloepr</p>
+        </div>
+        
+
+      </section>
+    </main>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+
+    </script>
+  </body>
+</html>
